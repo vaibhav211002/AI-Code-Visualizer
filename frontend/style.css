@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f1117;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    border-bottom: 1px solid #1e2130;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #7c6af7;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #888;
+    font-size: 0.95rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+textarea {
+    width: 100%;
+    height: 220px;
+    background-color: #1a1d2e;
+    color: #e0e0e0;
+    border: 1px solid #2e3150;
+    border-radius: 10px;
+    padding: 16px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    resize: vertical;
+    outline: none;
+    transition: border 0.2s;
+}
+
+textarea:focus {
+    border-color: #7c6af7;
+}
+
+button {
+    align-self: flex-end;
+    background-color: #7c6af7;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #6254d4;
+}
+
+button:disabled {
+    background-color: #3a3a5c;
+    cursor: not-allowed;
+}
+
+/* Cards */
+.card {
+    background-color: #1a1d2e;
+    border: 1px solid #2e3150;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    color: #7c6af7;
+    margin-bottom: 14px;
+}
+
+.card p {
+    color: #c0c0c0;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Diagrams */
+.diagram {
+    background-color: #12131f;
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+    text-align: center;
+}
+
+/* Loader */
+#loader {
+    text-align: center;
+    color: #7c6af7;
+    font-size: 1rem;
+    padding: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Error */
+.error-box {
+    background-color: #2a1a1a;
+    border: 1px solid #6b2e2e;
+    color: #f87171;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
+
+.CodeMirror {
+    height: 220px;
+    border-radius: 10px;
+    border: 1px solid #2e3150;
+    font-size: 0.9rem;
+    font-family: 'Courier New', monospace;
+}
+
+.CodeMirror-focused {
+    border-color: #7c6af7;
+}
